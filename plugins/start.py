@@ -139,7 +139,7 @@ async def not_joined(client: Client, message: Message):
     except IndexError:
         pass
         
-     try:
+   try:
         buttons.append(
             [                
                 InlineKeyboardButton(
