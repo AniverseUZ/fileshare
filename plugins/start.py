@@ -123,13 +123,25 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "💠Kanalga Qo'shilish💠",
+                "💠1-Kanalga Qo'shilish💠",
                 url=client.invitelink)
         ]
     ]
     try:
         buttons.append(
             [
+                InlineKeyboardButton(
+                    text='💠2-Kanalga Qo'shilish💠',
+                    url=f"https://t.me/{client.username}?start={message.command[1]}"
+                )
+            ]
+        )
+    except IndexError:
+        pass
+        
+    try:
+        buttons.append(
+            [          
                 InlineKeyboardButton(
                     text='✅Tasdiqlash✅',
                     url=f"https://t.me/{client.username}?start={message.command[1]}"
