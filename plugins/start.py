@@ -127,18 +127,7 @@ async def not_joined(client: Client, message: Message):
                 url=client.invitelink)
         ]
     ]
-    try:
-        buttons.append(
-            [
-                InlineKeyboardButton(
-                    text="💠2-Kanalga Qo'shilish💠",
-                    url=f"https://t.me/anime_trendlar"
-                )
-            ]
-        )
-    except IndexError:
-        pass
-            
+    
     try:
         buttons.append(
             [          
