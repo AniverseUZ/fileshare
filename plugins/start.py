@@ -133,7 +133,7 @@ async def not_joined(client: Client, message: Message):
             [   
                 InlineKeyboardButton(
                     text="💠2-Kanalga Qo'shilish💠",
-                    url=f"https://t.me/Anime_trendlar_rasmiy"
+                    url=f"https://t.me/Anime_trendlar"
                 )
             ]
         ) 
