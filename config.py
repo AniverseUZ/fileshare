@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "29668491"))
 API_HASH = os.environ.get("API_HASH", "84feb2e86bc3fa3b0b9bc1e3a3428177")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002066261988"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002075324365"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "6216046291"))
@@ -32,12 +32,12 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Aniverse:assalom13@cluste
 DB_NAME = os.environ.get("DATABASE_NAME", "aniverse")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001998572097"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002009206763"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "🎐Assalomu Alaykum Hurmatli{first}\n\n🎐Ushbu bot orqali o'zingizga kerakli bo'lgan fayllarni yuklab olishingiz mumkin!\n🎐Bizning asosiy kanal: @ANIME_TRENDLAR_RASMIY")
+START_MSG = os.environ.get("START_MESSAGE", "🎐Assalomu Alaykum Hurmatli{first}\n\n🎐Ushbu bot orqali o'zingizga kerakli bo'lgan fayllarni yuklab olishingiz mumkin!\n🎐Bizning asosiy kanal: @AniverseAnime")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "571015717").split()):
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌ Iltimos botga to'g'ridan to'g'ri xabar yubormang! @ANIME_TRENDLAR_RASMIY"
+USER_REPLY_TEXT = "❌ Iltimos botga to'g'ridan to'g'ri xabar yubormang! @AniverseAnime"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
