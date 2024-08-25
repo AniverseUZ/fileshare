@@ -1,11 +1,11 @@
 # --- For-Bot-Working --------- #
-pyrogram>=2.0.30  # Add specific version to avoid potential issues
-TgCrypto>=1.2.2
-pyromod==1.5
+pyrogram
+TgCrypto
+pyromod  # Remove the `==1.5` version constraint
 
 # --- For-Database ------------ #
-pymongo>=4.5,<5    # Specify a version that works with motor if needed later
-dnspython>=2.2.1
+pymongo  # Remove specific version constraint
+dnspython
 
 # --- For-Web-Response ------- #
-aiohttp>=3.8.1
+aiohttp
